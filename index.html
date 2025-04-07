@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestão de Personalização de Sacolas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestão de Personalização de Sacolas</h1>
+        <p>Total de registros: 0</p>
+
+        <form action="conexao.php" method="post">
+            <fieldset>
+                <legend>Dados do Pedido</legend>
+                <label>Embalagem:</label>
+                <input type="text" name="embalagem" required>
+                <label>Quantidade:</label>
+                <input type="number" name="quantidade" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados do Cliente</legend>
+                <label>Nome Cliente:</label>
+                <input type="text" name="nome" required>
+                <label>CNPJ:</label>
+                <input type="text" name="cnpj">
+                <label>CPF:</label>
+                <input type="text" name="cpf">
+                <label>Vendedor:</label>
+                <input type="text" name="vendedor">
+            </fieldset>
+
+            <fieldset>
+                <legend>Especificações da Sacola</legend>
+                <label>Tamanho:</label>
+                <input type="text" name="tamanho">
+                <label>Formato:</label>
+                <input type="text" name="formato">
+                <label>Tipo Papel:</label>
+                <input type="text" name="papel">
+            </fieldset>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
